@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 
 app = FastAPI(title="This is My quiz VIP Registration Desk")
 class StaffHeaders(BaseModel):
-    x_union_pass: Annotated[]
+    x_union_pass: Annotated[
         str,
         Header()
     ]
